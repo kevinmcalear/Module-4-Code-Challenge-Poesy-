@@ -1,33 +1,57 @@
-.App {
+.app {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  justify-items: center;
+}
+
+.app > * {
+  width: 100%;
   text-align: center;
+  justify-content: center;
+  border-style: solid;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.login {
+  height: 3vw;
+  display: grid;
+  justify-content: center;
+  padding: 2vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-form {
+  height: 100%;
+  width: 100%
+}
+
+
+.user-header {
+  padding: 2vw;
+}
+
+.new-poem-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.new-poem-form > textarea {
+  height: 20vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-poem-form > * {
+  padding: 1%;
+  margin: 1%;
+}
+
+.new-poem {
+  height: 30vw;
+  padding: 2vw;
+}
+
+.poems-container > * {
+  border-style: solid;
+  padding: 2vw;
+  margin: 1vw;
+}
+.poems-container {
+  padding: 2vw;
 }
